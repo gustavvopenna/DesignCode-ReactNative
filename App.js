@@ -1,18 +1,48 @@
 import React from 'react'
+import { ScrollView, SafeAreaView } from 'react-native'
 import { Text } from 'react-native'
 import styled from 'styled-components'
+import { Icon } from 'expo'
+import { NotificationIcon } from './components/Icons'
+
 import Card from './components/Cards'
 
 export default function App() {
   return (
     <Container>
-      <TitleBar>
-        <Avatar source={require('./assets/avatar.jpg')} />
-        <Title>Welcome back,</Title>
-        <Name>Gustavo</Name>
-      </TitleBar>
-      <Subtitle>Continue learning</Subtitle>
-      <Card />
+      <SafeAreaView>
+        <ScrollView style={{ height: '100%' }}>
+          <TitleBar>
+            <Avatar source={require('./assets/avatar.jpg')} />
+            <Title>Welcome back,</Title>
+            <Name>Gustavo</Name>
+            <NotificationIcon
+              style={{ position: 'absolute', right: 20, top: 5 }}
+            />
+          </TitleBar>
+          <Subtitle>Continue learning</Subtitle>
+          <ScrollView
+            horizontal={true}
+            showsHorizontalScrollIndicator={false}
+            style={{ paddingBottom: 30 }}
+          >
+            <Card
+              image={require('./assets/background2.jpg')}
+              title="Styled Components"
+              logo={require('./assets/logo-react.png')}
+              caption="React Native"
+              subtitle="5 of 12 sections"
+            />
+            <Card
+              image={require('./assets/background2.jpg')}
+              title="Styled Components 2"
+              logo={require('./assets/logo-react.png')}
+              caption="React"
+              subtitle="10 of 12 sections"
+            />
+          </ScrollView>
+        </ScrollView>
+      </SafeAreaView>
     </Container>
   )
 }
