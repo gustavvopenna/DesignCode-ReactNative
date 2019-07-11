@@ -3,5 +3,6 @@
 
 ## Screenshots
 
+{:refdef: style="width: 10px; height: 10px"}
 ![App Screenshot](/assets/screenshots/screenshot-1.png)
-Format: ![App Screenshot](url)
+
