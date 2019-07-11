@@ -3,6 +3,5 @@
 
 ## Screenshots
 
-<img src="/assets/screenshots/screenshot-1.png" width="20" />
 ![App Screenshot](/assets/screenshots/screenshot-1.png)
 
