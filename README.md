@@ -3,5 +3,4 @@
 
 ## Screenshots
 
-![App Screenshot](/assets/screenshots/screenshot-1.png)
 
